@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 
 def get_klines(symbol, interval="4h", limit=300):
-    url = "https://api.binance.com/api/v3/klines"
+    url = "https://data-api.binance.vision/api/v3/klines"
     params = {
         "symbol": symbol,
         "interval": interval,
